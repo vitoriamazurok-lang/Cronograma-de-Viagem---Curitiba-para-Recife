@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Viagem: Curitiba - Recife</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação do Chart.js via CDN -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cronograma de Viagem: Curitiba - Recife</h1>
+
+        <div class="content-layout">
+            <!-- Tabela de Dados baseada na imagem -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Valor Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Passagem de avião</td>
+                            <td>R$ 1.300,00</td>
+                            <td>1</td>
+                            <td class="valor">R$ 1.300,00</td>
+                        </tr>
+                        <tr>
+                            <td>Hospedagem</td>
+                            <td>R$ 200,00</td>
+                            <td>5</td>
+                            <td class="valor">R$ 1.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Alimentação</td>
+                            <td>R$ 100,00</td>
+                            <td>5</td>
+                            <td class="valor">R$ 500,00</td>
+                        </tr>
+                        <tr>
+                            <td>Transporte</td>
+                            <td>R$ 50,00</td>
+                            <td>3</td>
+                            <td class="valor">R$ 150,00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right"><strong>Total</strong></td>
+                            <td class="total-valor">R$ 2.950,00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- Área do Gráfico de Pizza -->
+            <div class="chart-container">
+                <canvas id="graficoViagem"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
